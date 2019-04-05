@@ -1,5 +1,4 @@
 import musicShop.enums.InstrumentType;
-import musicShop.instruments.Guitar;
 import musicShop.instruments.Trumpet;
 import org.junit.Before;
 import org.junit.Test;
@@ -48,5 +47,9 @@ public class TrumpetTest {
     @Test
     public void canPlay() {
         assertEquals("Play trumpet", trumpet.play());
+    }
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(25.00, trumpet.calculateMarkup());
     }
 }

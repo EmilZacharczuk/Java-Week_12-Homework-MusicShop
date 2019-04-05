@@ -12,7 +12,7 @@ public class PianoTest {
 
     @Before
     public void before() {
-        piano = new Piano("piano", "wood", "black", InstrumentType.KEYBOARD, PianoType.GRAND);
+        piano = new Piano("piano", "wood", "black", InstrumentType.KEYBOARD, PianoType.GRAND, 20.00, 30.00);
     }
     @Test
     public void hasDescription() {
@@ -39,5 +39,9 @@ public class PianoTest {
     @Test
     public void canPlay() {
         assertEquals("Play piano", piano.play());
+    }
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(10.00, piano.calculateMarkup());
     }
 }
