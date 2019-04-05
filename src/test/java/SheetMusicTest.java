@@ -19,7 +19,8 @@ public class SheetMusicTest {
     }
 
     @Test
-    public void hasPriceBought() {
+    public void hasPriceBought()
+    {
         assertEquals(10.00, sheetMusic.getPriceBought());
     }
     @Test
