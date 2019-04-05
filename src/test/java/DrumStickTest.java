@@ -1,9 +1,9 @@
 import musicShop.accessories.DrumStick;
-import musicShop.accessories.GuitarString;
 import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+
 
 public class DrumStickTest {
 
@@ -26,5 +26,9 @@ public class DrumStickTest {
     @Test
     public void hasPriceForSale() {
         assertEquals(20.00, drumStick.getPriceForSale());
+    }
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(10.00, drumStick.calculateMarkup());
     }
 }

@@ -2,6 +2,7 @@ package musicShop.instruments;
 
 import musicShop.enums.InstrumentType;
 import musicShop.interfaces.IPlay;
+import musicShop.interfaces.ISell;
 
 public abstract class Instrument implements IPlay {
 

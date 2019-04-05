@@ -26,6 +26,10 @@ public class GuitarStringTest {
     public void hasPriceForSale() {
         assertEquals(20.00, guitarString.getPriceForSale());
     }
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(10.00, guitarString.calculateMarkup());
+    }
 }
 
 

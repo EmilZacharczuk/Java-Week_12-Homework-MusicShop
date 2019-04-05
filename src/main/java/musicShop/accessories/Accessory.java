@@ -1,6 +1,8 @@
 package musicShop.accessories;
 
-public abstract class Accessory {
+import musicShop.interfaces.ISell;
+
+public abstract class Accessory implements ISell {
 
     private String description;
     private double priceBought;
@@ -20,5 +22,9 @@ public abstract class Accessory {
     }
     public double getPriceForSale() {
         return this.priceForSale;
+    }
+    public double calculateMarkup() {
+        double total =  this.priceForSale - this.priceBought;
+        return total;
     }
 }
