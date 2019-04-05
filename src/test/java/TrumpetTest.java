@@ -45,4 +45,8 @@ public class TrumpetTest {
     public void hasPriceForSale() {
         assertEquals(75.00, trumpet.getPriceForSale());
     }
+    @Test
+    public void canPlay() {
+        assertEquals("Play trumpet", trumpet.play());
+    }
 }

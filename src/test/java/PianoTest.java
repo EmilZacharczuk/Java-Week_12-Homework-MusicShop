@@ -36,4 +36,8 @@ public class PianoTest {
     public void hasPianoType() {
         assertEquals(PianoType.GRAND, piano.getPianoType());
     }
+    @Test
+    public void canPlay() {
+        assertEquals("Play piano", piano.play());
+    }
 }

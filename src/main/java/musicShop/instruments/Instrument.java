@@ -1,8 +1,9 @@
 package musicShop.instruments;
 
 import musicShop.enums.InstrumentType;
+import musicShop.interfaces.IPlay;
 
-public abstract class Instrument {
+public abstract class Instrument implements IPlay {
 
     private String description;
     private String material;

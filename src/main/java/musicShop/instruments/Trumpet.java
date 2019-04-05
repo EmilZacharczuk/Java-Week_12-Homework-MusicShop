@@ -24,4 +24,7 @@ public class Trumpet extends Instrument{
     public double getPriceForSale() {
         return this.priceForSale;
     }
+    public String play() {
+        return "Play trumpet";
+    }
 }
