@@ -9,11 +9,16 @@ public class MusicShop {
     private String name;
     private ArrayList<ISell> sellable;
 
-    public MusicShop(String name) {
+    public MusicShop(String name, ArrayList<ISell> sellable) {
         this.name = name;
-        this.sellable = new ArrayList<>();
+        this.sellable = sellable;
     }
     public String getName() {
         return this.name;
     }
+
+    public ArrayList<ISell> getAllSellable() {
+        return sellable;
+    }
+
 }
