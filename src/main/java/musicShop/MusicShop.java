@@ -21,4 +21,10 @@ public class MusicShop {
         return sellable;
     }
 
+    public void removeSellable() {
+        this.sellable.remove(1);
+    }
+    public void addSellable(ISell sellable) {
+        this.sellable.add(sellable);
+    }
 }

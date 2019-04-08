@@ -34,19 +34,19 @@ public class MusicShopTest {
     public void hasStock() {
         assertEquals(1, musicShop.getAllSellable().size());
     }
-    @Test
-    public void canAddStock() {
-        Guitar guitar = new Guitar("guitar", "wood","brown", InstrumentType.STRINGS, 6, 20.00,30.00 );
-        musicShop.getAllSellable().add(guitar);
-        assertEquals(2, musicShop.getAllSellable().size());
-    }
+
     @Test
     public void canRemoveStock() {
         Guitar guitar = new Guitar("guitar", "wood","brown", InstrumentType.STRINGS, 6, 20.00,30.00 );
-        musicShop.getAllSellable().add(guitar);
-        musicShop.getAllSellable().remove(0);
+        musicShop.addSellable(guitar);
+        musicShop.removeSellable();
         assertEquals(1, musicShop.getAllSellable().size());
     }
 
-
+    @Test
+    public void canAddStock() {
+        Guitar guitar = new Guitar("guitar", "wood","brown", InstrumentType.STRINGS, 6, 20.00,30.00 );
+        musicShop.addSellable(guitar);
+        assertEquals(2, musicShop.getAllSellable().size());
+    }
 }
